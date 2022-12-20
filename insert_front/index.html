@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <!--- important meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--- Title -->
+    <title>درخواست ارائه درس - دانشگاه صنعتی نوشیروانی بابل</title>
+    <link rel="icon" href="img/logo/com_nit.png">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+
+<header dir="ltr">
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand">
+            <div class="row">
+                <img src="img/logo/nit.png" alt="logo" width="10%" height="10%" class="brand-image elevation-3" style="opacity: .8;display: block">
+                <img src="img/logo/com_nit.png" alt="logo" width="10%" height="10%" class="brand-image elevation-3" style="opacity: .8;display: block">
+            </div>
+        </a>
+    </nav>
+</header>
+
+<section id="home">
+    <!-- Overplay -->
+    <div id="home-overlay"></div>
+
+    <!-- Home Content -->
+    <div id="home-content">
+        <div id="home-content-inner" class="text-center">
+            <div id="home-heading">
+                <h1 id="home-heading-1"><span>درخواست ارائه درس</span></h1>
+            </div>
+            <br><br>
+            <div id="home-btn">
+                <a class="btn btn-general btn-header" href="#summer" title="Start Now" role="button">ترم تابستان
+                    99-00</a>
+                <a class="btn btn-general btn-header" href="#fall" title="Start Now" role="button">ترم مهر 00-01</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="summer">
+    <div class="content-box-md">
+        <div class="container" style="margin-left: auto; margin-right: auto;">
+            <div id="summer-right">
+<!--                action="https://***/summer" method="post" enctype='application/json'-->
+                <form onsubmit="sendInformation(); return false;">
+                    <div class="row">
+                        <div class="col-12">
+                            <h4>ترم تابستان 99-00</h4>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h5>تنها دروس یک واحدی در ترم تابستان ارائه خواهند شد</h5><br>
+                        </div>
+                    </div>
+
+                    <div class="row needs-validation" novalidate>
+                        <div class="col-md-3">
+                            <label for="summerFirstName" class="form-label">نام</label>
+                            <input type="text" class="form-control" id="summerFirstName" name="firstName" required>
+                            <div class="invalid-feedback">
+                                لطفا نام خود را وارد کنید.
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="summerLastName" class="form-label">نام خانوادگی</label>
+                            <input type="text" class="form-control" id="summerLastName" name="lastName" required>
+                            <div class="invalid-feedback">
+                                لطفا نام خانوادگی خود را وارد کنید.
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="summerUsername" class="form-label">شماره دانشجویی</label>
+                            <div class="input-group has-validation">
+                                <input type="text" class="form-control" id="summerUsername" name="username" aria-describedby="inputGroupPrepend" required>
+                                <div class="invalid-feedback">
+                                    لطفا شماره دانشجویی خود را وارد کنید.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row needs-validation" novalidate>
+                        <div class="col-md-3">
+                            <label for="summerLessonName" class="form-label">دروس قابل ارئه</label>
+                            <select class="form-select" id="summerLessonName" name="lessonName" required>
+                                <option selected disabled value="">نام درس...</option>
+                                <option>آزمایشگاه معماری و مدارهای منطقی</option>
+                                <option>آزمایشگاه ریزپردازنده</option>
+                                <option>آزمایشگاه پایگاه داده ها</option>
+                                <option>کارگاه متلب</option>
+                                <option>سایر</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                لطفا درس مورد نظر خود را انتخاب کنید.
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row needs-validation" novalidate>
+                        <div class="col-12">
+                            <label for="summerExtra" class="form-label">توضیحات</label>
+                            <textarea class="form-control" id="summerExtra" name="extra" placeholder="توضیحات اضافه"></textarea>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row needs-validation" novalidate>
+                        <div class="col-12" id="submit-btn-summer">
+                            <button class="btn btn-general btn-header" type="submit" role="button">ارسال درخواست</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="fall">
+    <div class="content-box-md">
+        <div class="container" style="margin-left: auto; margin-right: auto;">
+            <div id="fall-right">
+                <form action="https://***/fall" method="post" enctype='application/json'>
+                    <div class="row">
+                        <div class="col-12">
+                            <h4>ترم مهر 00-01</h4>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h5>دروس ذکر شده به عنوان دروس اختیاری ارائه می شوند.</h5><br>
+                        </div>
+                    </div>
+
+                    <div class="row needs-validation" novalidate>
+                        <div class="col-md-3">
+                            <label for="fallFirstName" class="form-label">نام</label>
+                            <input type="text" class="form-control" id="fallFirstName" required>
+                            <div class="invalid-feedback">
+                                لطفا نام خود را وارد کنید.
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="fallLastName" class="form-label">نام خانوادگی</label>
+                            <input type="text" class="form-control" id="fallLastName" required>
+                            <div class="invalid-feedback">
+                                لطفا نام خانوادگی خود را وارد کنید.
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="fallUsername" class="form-label">شماره دانشجویی</label>
+                            <div class="input-group has-validation">
+                                <input type="text" class="form-control" id="fallUsername"
+                                       aria-describedby="inputGroupPrepend" required>
+                                <div class="invalid-feedback">
+                                    لطفا شماره دانشجویی خود را وارد کنید.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row needs-validation" novalidate>
+                        <div class="col-md-3">
+                            <label for="fallLessonName" class="form-label">دروس قابل ارئه</label>
+                            <select class="form-select" id="fallLessonName" required>
+                                <option selected disabled value="">نام درس...</option>
+                                <option>برنامه نویسی شی گرا</option>
+                                <option>امنیت در شبکه</option>
+                                <option>اینترنت اشیا</option>
+                                <option>سایر</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                لطفا درس مورد نظر خود را انتخاب کنید.
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row needs-validation" novalidate>
+                        <div class="col-12">
+                            <label for="fallExtra" class="form-label">توضیحات</label>
+                            <textarea class="form-control" id="fallExtra" name="text" placeholder="توضیحات اضافه"></textarea>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row needs-validation" novalidate>
+                        <div class="col-12" id="submit-btn-fall">
+                            <button class="btn btn-general btn-header" type="submit" role="button">ارسال درخواست
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+<footer class="text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>انجمن علمی مهندسی کامپیوتر دانشگاه صنعتی نوشیروانی بابل</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer Ends -->
+
+<!-- script -->
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+    function sendInformation() {
+        var firstName = $("#summerFirstName").val();
+        var lastName = $("#summerLastName").val();
+        var username = $("#summerUsername").val();
+        var lessonName = $("#summerLessonName").val();
+        var extra = $("#summerExtra").val();
+        $.post("https://***/summer",
+            {
+                firstName: firstName,
+                lastName: lastName,
+                username: username,
+                lessonName: lessonName,
+                extra: extra
+            },
+            function(data, status){
+                alert("Data: " + data + "\nStatus: " + status);
+            });
+    }
+</script>
+<!-- script Ends -->
+
+</body>
+</html>
