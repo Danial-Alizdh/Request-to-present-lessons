@@ -1,0 +1,525 @@
+/*=========================================
+|   |   |   Html, Body
+=========================================== */
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir.eot');
+    src: url('../fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir.woff2') format('woff2'),
+    url('../fonts/Vazir.woff') format('woff'),
+    url('../fonts/Vazir.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Bold.eot');
+    src: url('../fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Bold.woff2') format('woff2'),
+    url('../fonts/Vazir-Bold.woff') format('woff'),
+    url('../fonts/Vazir-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Light.eot');
+    src: url('../fonts/Vazir-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Light.woff2') format('woff2'),
+    url('../fonts/Vazir-Light.woff') format('woff'),
+    url('../fonts/Vazir-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Medium.eot');
+    src: url('../fonts/Vazir-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Medium.woff2') format('woff2'),
+    url('../fonts/Vazir-Medium.woff') format('woff'),
+    url('../fonts/Vazir-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Thin.eot');
+    src: url('../fonts/Vazir-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Thin.woff2') format('woff2'),
+    url('../fonts/Vazir-Thin.woff') format('woff'),
+    url('../fonts/Vazir-Thin.ttf') format('truetype');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Black.eot');
+    src: url('../fonts/Vazir-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Black.woff2') format('woff2'),
+    url('../fonts/Vazir-Black.woff') format('woff'),
+    url('../fonts/Vazir-Black.ttf') format('truetype');
+    font-weight: 900;
+}
+
+/*---------------------------------- End of fonts ---------------------------------- */
+
+body {
+    direction: rtl !important;
+    font-family: 'Vazir', sans-serif !important;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    color: #212226;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Vazir', 'Raleway', sans-serif;
+}
+
+p {
+    font-family: 'Vazir', 'Open Sans', sans-serif;
+    font-size: 18px;
+
+    line-height: 24px;
+}
+
+section {
+    background: #D3D4D8;
+    overflow: hidden;
+}
+
+.img-responsive {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+/*=========================================
+|   |   |   Home
+=========================================== */
+#home {
+    background: none;
+    height: 100%;
+}
+
+#home-overlay {
+    background-image: url("../img/background/01.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#home-content {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#home-heading h1 {
+    color: #fff;
+    font-size: 56px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin: 0;
+    display: inline-block;
+}
+
+#home-heading h1 span {
+    color: #0066cc;
+    font-weight: bolder;
+}
+
+#home-text p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: lighter;
+    margin: 8px 0 30px 0;
+}
+
+/*=========================================
+|   |   |   Buttons
+=========================================== */
+.btn-general {
+    font-family: 'Vazir', "Raleway", sans-serif;
+    border-radius: 28px;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0 6px;
+    padding: 8px 16px 8px 16px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.btn-header {
+    color: #fff;
+    /*border: 1px solid #fff;*/
+    background-color: #3FBAC2;
+}
+
+.btn-header:hover, .btn-header:focus {
+    color: #fff;
+    background-color: #03839d;
+    font-weight: bold;
+}
+
+.btn-yellow {
+    color: #fff;
+    border: 1px solid #2e66a7;
+    background-color: #2e66a7;
+}
+
+.btn-yellow:hover, .btn-yellow:focus {
+    color: #fff;
+    background-color: #212226;
+    border: 1px solid #212226;
+}
+
+.btn-blue {
+    color:#fff;
+    border:1px solid #2EDED0;
+    background-color:#2EDED0
+}
+
+.btn-blue:hover, .btn-blue:focus {
+    color:#fff;
+    background-color:#212226;
+    border:1px solid #212226
+}
+
+.btn-white {
+    color: #212226;
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+
+.btn-white:hover, .btn-white:focus {
+    color: #fff;
+    background-color: #212226;
+    border: 1px solid #212226;
+}
+
+.btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 3px 15px;
+    border-radius: 4px;
+    font-size: 22px;
+    display: none;
+}
+
+.arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    color: #fff;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin-left: -16px;
+    z-index: 1;
+}
+.arrow-down:hover {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    color: #2f79ff;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin-left: -16px;
+    z-index: 1;
+}
+/*=========================================
+|   |   |   Content Boxes
+=========================================== */
+.content-box-lg {
+    padding: 50px 0;
+}
+
+.content-box-md {
+    padding: 40px 0;
+}
+
+.content-box-sm {
+    padding: 45px 0;
+}
+
+/*=========================================
+|   |   |   Vertical & Horizontal headings
+=========================================== */
+.vertical-heading h5 {
+    color: #276AE7;
+    font-size: 24px;
+    font-weight: 500;
+    word-spacing: 9px;
+    display: inline-block;
+    position: relative;
+}
+
+.vertical-heading h2 {
+    margin: 0 0 0 35px;
+}
+
+.horizontal-heading h2,
+.vertical-heading h2 {
+    font-size: 28px;
+    font-weight: 100;
+    line-height: 45px;
+}
+
+.horizontal-heading h2 {
+    margin: 0;
+}
+
+.horizontal-heading {
+    margin-bottom: 80px;
+}
+
+.horizontal-heading h5 {
+    color: #276AE7;
+    font-size: 26px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/*=========================================
+|   |   |   Summer
+=========================================== */
+#summer-right {
+    padding:25px 30px;
+    -webkit-box-shadow:0 0 10px 0 rgba(0,0,0,.1);
+    box-shadow:0 0 10px 0 rgba(0,0,0,.1);
+    border-radius:5px;
+    vertical-align: center;
+    background: #fff;
+}
+
+#summer-right h4 {
+    font-size:24px
+}
+
+#summer-right h5 {
+    font-size:12px;
+    color: #ff2f69;
+}
+
+#summer-right p {
+    margin-bottom:25px
+}
+
+#summer-right form .form-control {
+    font-family:'Vazir',"Open Sans",sans-serif;
+    padding:10px 15px;
+    font-size:16px;
+    line-height:24px
+}
+
+#summer-right form textarea.form-control {
+    min-height:auto
+}
+
+/*=========================================
+|   |   |   Fall
+=========================================== */
+#fall-right {
+    padding:25px 30px;
+    -webkit-box-shadow:0 0 10px 0 rgba(0,0,0,.1);
+    box-shadow:0 0 10px 0 rgba(0,0,0,.1);
+    border-radius:5px;
+    vertical-align: center;
+    background: #fff;
+}
+
+#fall-right h4 {
+    font-size:24px
+}
+
+#fall-right h5 {
+    font-size:12px;
+    color: #ff2f69;
+}
+
+#fall-right p {
+    margin-bottom:25px
+}
+
+#fall-right form .form-control {
+    font-family:'Vazir',"Open Sans",sans-serif;
+    padding:10px 15px;
+    font-size:16px;
+    line-height:24px
+}
+
+#fall-right form textarea.form-control {
+    min-height:auto
+}
+
+/*=========================================
+|   |   |   footer
+=========================================== */
+footer {
+    background: #2F2E2C;
+    margin-bottom: 0;
+    padding: 20px;
+}
+
+footer a {
+    color: #3FBAC2;
+}
+
+footer a:hover {
+    color: #1b6d85;
+}
+
+footer p {
+    color: #fff;
+    font-size:14px;
+    line-height:18px;
+}
+
+footer p span {
+    color: #276AE7;
+}
+
+/*=========================================
+|   |   |   Navigation
+=========================================== */
+#nav-dark {
+    width: 100%;
+    padding: 40px 0;
+    background: #212226;
+    margin-bottom: 20px;
+}
+
+.navbar-nav {
+    padding: 15px 15px 15px 35px;
+    float: right;
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+
+}
+
+.navbar-toggler, .navbar-toggler:focus, .navbar-toggler:hover {
+    text-decoration: none;
+}
+
+.site-nav-wrapper {
+    padding: 0 85px;
+}
+
+.nav-item a {
+    padding: 5px 15px;
+    font-family: 'Vazir', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.dropdown-menu a {
+    font-size: 15px;
+    color: #212226;
+    transition: .3s ease-in;
+    text-align: right;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu a:focus {
+    color: #fff;
+    background-color: #276AE7;
+    font-size: 17px;
+}
+
+.dropdown-menu {
+    padding: 8px 15px;
+}
+
+ul.navbar-nav > a:hover,
+ul.navbar-nav > a:focus {
+    background: none;
+    color: #276AE7;
+}
+
+.navbar-toggler-icon {
+    color: #2EDED0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #212226;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.top-header {
+    color: #ffffff;
+    padding: 50px 200px;
+}
+
+.header-email i {
+    font-size: 35px;
+    text-align: center;
+    padding-top: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+
+.header-email a {
+    font-size: 25px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-menu nav {
+    background: #2e66a7;
+}
+
+.header-menu ul {
+    width: 100%;
+
+}
+
+.header-menu li {
+    width: 25%;
+    text-align: center;
+    border-left: solid #000000 1px;
+}
+
+.header-menu li:hover {
+    font-weight: bold;
+}
+
+.header-menu a {
+    text-decoration: none;
+    color: #ffffff !important;
+}
+
+/*=========================================
+|   |   |
+=========================================== */
+.smooth-scroll i:hover {
+    color: #00aced;
+}
